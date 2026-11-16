@@ -12,8 +12,19 @@ if (!nameEl) {
 console.log(nameEl.value)
 
 
+////////////////////////////////////////
+///////     ! and ? operators /////////
+///////////////////////////////////////
+
 //An elegant way to say that a Element can't be null or undefined
 const ageEl = document.getElementById("user_age")!
 
 //And a better way to verify if the element is null or undefined
 console.log(ageEl?.value)
+
+
+////////////////////////////////////////
+///////     TypeCasting        /////////
+///////////////////////////////////////
+
+const ageEl2 = document.getElementById("user_age") as HTMLInputElement | null
