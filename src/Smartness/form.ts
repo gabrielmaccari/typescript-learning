@@ -10,3 +10,10 @@ if (!nameEl) {
 
 //Now perceive that we just must be HTMLElement type because I validated the null before
 console.log(nameEl.value)
+
+
+//An elegant way to say that a Element can't be null or undefined
+const ageEl = document.getElementById("user_age")!
+
+//And a better way to verify if the element is null or undefined
+console.log(ageEl?.value)
