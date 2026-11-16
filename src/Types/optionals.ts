@@ -4,3 +4,14 @@ function generateError(msg?: string) {
 
 generateError()
 generateError("API failed")
+
+type User = {
+    name : string,
+    age : number,
+    role? : 'admin' | 'guest'
+}
+
+let user : User = {
+    name : "Gabriel",
+    age : 12
+}
