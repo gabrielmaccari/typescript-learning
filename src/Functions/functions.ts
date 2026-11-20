@@ -30,7 +30,7 @@ type User {
     name : string;
     age  : number;
     greet : () => string
-}
+} 
 
 let user: User = {
     name : "Gabriel",
